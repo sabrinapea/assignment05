@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 5</title>
-    <script src="js/script.js"></script>
+    <script src="js/script.js">
+    window.document.addEventListener('load', init, false);
+    </script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
         h1 {margin-bottom: 30px;}
@@ -14,30 +16,32 @@
         form {width: 30%; padding: 20px;}
         .btn {padding: 20px 0; font-size: 20px;}        
         form {border: solid rgb(245, 76, 25); background-color: rgb(236, 234, 234); width: 475px;}
+        
     </style>
 </head>
 <body class="mt-2 ml-4">
+    
     <h1>Employee Management System</h1>
     <form id="empForm col-md-6">
         <div class="form-group col-md-6">
             <label for="id">8-Digit Employee ID</label>
-            <input type="text" class="form-control" id="id" maxlength="8" required>
+            <input type="text" class="Employee ID:" id="id" maxlength="8" required>
         </div>
         <div class="form-group col-md-6">
           <label for="name">Full Name</label>
-          <input type="text" class="form-control" id="name" required >
+          <input type="text" class="Full Name:" id="name" required >
         </div>
         <div class="form-group col-md-6">
             <label for="ext">4-Digit Extension</label>
-            <input type="text" class="form-control" id="ext" maxlength="4" required >
+            <input type="text" class="Extension" id="ext" maxlength="4" required >
         </div>
         <div class="form-group col-md-6">
             <label for="email">Email</label>
-            <input type="email" class="form-control" id="email" required >
+            <input type="email" class="Email" id="email" required >
         </div>       
         <div class="form-group col-md-5">
             <label for="department">Department</label>
-            <select class="form-control" id="department">
+            <select class="Department" id="department">
               <option>Administrative</option>
               <option>Engineering</option>
               <option>Executive</option>
