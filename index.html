@@ -12,13 +12,41 @@
         label {font-weight: bold;}
         input, select {margin-bottom: 10px;}
         form {width: 30%; padding: 20px;}
+        .btn {padding: 20px 0; font-size: 20px;}        
+        form {border: solid rgb(245, 76, 25); background-color: rgb(236, 234, 234); width: 475px;}
     </style>
 </head>
 <body class="mt-2 ml-4">
     <h1>Employee Management System</h1>
-    <form id="empForm">
-     
+    <form id="empForm col-md-6">
+        <div class="form-group col-md-6">
+            <label for="id">8-Digit Employee ID</label>
+            <input type="text" class="form-control" id="id" maxlength="8" required>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="name">Full Name</label>
+          <input type="text" class="form-control" id="name" required >
+        </div>
+        <div class="form-group col-md-6">
+            <label for="ext">4-Digit Extension</label>
+            <input type="text" class="form-control" id="ext" maxlength="4" required >
+        </div>
+        <div class="form-group col-md-6">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" required >
+        </div>       
+        <div class="form-group col-md-5">
+            <label for="department">Department</label>
+            <select class="form-control" id="department">
+              <option>Administrative</option>
+              <option>Engineering</option>
+              <option>Executive</option>
+              <option>Marketing</option>
+              <option>Quality Assurance</option>
+              <option>Sales</option>
+            </select><br>
+        </div>
+        <button type="submit" class="btn btn-primary col-sm-5 " id="submit">Add Employee</button>
     </form>
-    <h2>heloo assignment 5</h2>
 </body>
 </html>
