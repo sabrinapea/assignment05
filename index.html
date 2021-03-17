@@ -14,7 +14,7 @@
         label {font-weight: bold;}
         input, select {margin-bottom: 10px;}
         form {width: 30%; padding: 20px;}
-        .btn {padding: 20px 0; font-size: 20px;}        
+        .btn {padding: 5px 0; font-size: 15px; margin-left: 15px; margin-top: 10px;}        
         form {border: solid rgb(245, 76, 25); background-color: rgb(236, 234, 234); width: 475px;}
         
     </style>
@@ -23,23 +23,23 @@
     
     <h1>Employee Management System</h1>
     <form id="empForm col-md-6">
-        <div class="form-group col-md-6">
+        <div class="form col-md-6">
             <label for="id">8-Digit Employee ID</label>
             <input type="text" class="Employee ID:" id="id" maxlength="8" required>
         </div>
-        <div class="form-group col-md-6">
+        <div class="form col-md-6">
           <label for="name">Full Name</label>
-          <input type="text" class="Full Name:" id="name" required >
+          <input type="text" class="Full Name:" id="fullname" required >
         </div>
-        <div class="form-group col-md-6">
+        <div class="form col-md-6">
             <label for="ext">4-Digit Extension</label>
             <input type="text" class="Extension" id="ext" maxlength="4" required >
         </div>
-        <div class="form-group col-md-6">
+        <div class="form col-md-6">
             <label for="email">Email</label>
             <input type="email" class="Email" id="email" required >
         </div>       
-        <div class="form-group col-md-5">
+        <div class="form col-md-2">
             <label for="department">Department</label>
             <select class="Department" id="department">
               <option>Administrative</option>
@@ -50,7 +50,7 @@
               <option>Sales</option>
             </select><br>
         </div>
-        <button type="submit" class="btn btn-primary col-sm-5 " id="submit">Add Employee</button>
+        <button type="submit" value="click"class="btn btn-primary col-md-4 " id="submit" >Add Employee</button>
     </form>
 </body>
 </html>

@@ -1,18 +1,18 @@
-// submit.addEventListener("click", function (e) {
-//     window.console.log(e.target.innerText);
-// }, false);
-
 /*eslint-env global*/
+window.addEventListener('load', init => {
 
-window.addEventListener('load', (e) => {
-    "use strict";
-    // function display(e) {
-    //     window.console.log("here you go:" + e.target.innerHTML);
-    
-    let div = document.getElementById('empForm');
-    div.addEventListener('submit', (e) =>  {   // false is default
-        console.log(`here you are ${e.target.className});
-     
+    // helper function to get DOM elements
+    const $ = (elID) => {return document.getElementById(elID);};
 
-    }); 
+    function displayForm(e) {
+        e.preventDefault(e);
+        console.log(`ID: ${$('id').value}`);
+        console.log(`Name: ${$('fullname').value}`);
+        console.log(`Extension: ${$('ext').value}`);
+        console.log(`Email: ${$('email').value}`);
+        console.log(`Department: ${$('department').value}`);     
+    }
+
+    $('empForm col-md-6').addEventListener('submit', displayForm);
+
 });
